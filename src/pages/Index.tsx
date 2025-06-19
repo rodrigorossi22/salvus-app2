@@ -15,20 +15,22 @@ const Index = () => {
     });
   };
 
+  console.log('Index component carregando...');
+
   return (
-    <div className="min-h-screen bg-salvus-navy flex flex-col items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen bg-[#172643] flex flex-col items-center justify-center p-6 relative overflow-hidden">
       {/* Fundo com gradiente sutil */}
-      <div className="absolute inset-0 bg-gradient-to-br from-salvus-navy via-salvus-navy to-blue-900/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#172643] via-[#172643] to-blue-900/50"></div>
       
       {/* Elementos decorativos de fundo */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-salvus-gold/5 rounded-full blur-xl"></div>
-      <div className="absolute bottom-32 right-16 w-32 h-32 bg-salvus-gold/5 rounded-full blur-xl"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-[#B8860B]/5 rounded-full blur-xl"></div>
+      <div className="absolute bottom-32 right-16 w-32 h-32 bg-[#B8860B]/5 rounded-full blur-xl"></div>
       
       <div className="relative z-10 w-full max-w-md mx-auto space-y-8">
         {/* Logo da Clínica */}
         <div className="text-center mb-12">
           <SalvusLogo className="w-72 h-auto mx-auto mb-4" />
-          <div className="w-16 h-1 bg-salvus-gold mx-auto rounded-full"></div>
+          <div className="w-16 h-1 bg-[#B8860B] mx-auto rounded-full"></div>
         </div>
 
         {/* Título */}

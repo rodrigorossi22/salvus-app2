@@ -18,7 +18,7 @@ const DriveButton = ({ title, url, description }: DriveButtonProps) => {
   return (
     <button
       onClick={handleClick}
-      className="w-full bg-white/10 backdrop-blur-sm border border-salvus-gold/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white/20 hover:border-salvus-gold/50 hover:scale-105 active:scale-95 shadow-lg"
+      className="w-full bg-white/10 backdrop-blur-sm border border-[#B8860B]/30 rounded-2xl p-6 transition-all duration-300 hover:bg-white/20 hover:border-[#B8860B]/50 hover:scale-105 active:scale-95 shadow-lg"
     >
       <div className="flex items-center justify-between">
         <div className="text-left flex-1">
@@ -27,7 +27,7 @@ const DriveButton = ({ title, url, description }: DriveButtonProps) => {
             <p className="text-white/80 text-sm">{description}</p>
           )}
         </div>
-        <ExternalLink className="text-salvus-gold ml-4 flex-shrink-0" size={24} />
+        <ExternalLink className="text-[#B8860B] ml-4 flex-shrink-0" size={24} />
       </div>
     </button>
   );
