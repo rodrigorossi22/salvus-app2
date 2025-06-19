@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
 
-## Project info
+# Clínica Salvus - Aplicativo de Gestão de Documentos
 
-**URL**: https://lovable.dev/projects/669d95b1-f133-4b81-a93a-624dcfd190e5
+## Sobre o Projeto
 
-## How can I edit this code?
+Aplicativo móvel desenvolvido para a Clínica Salvus que facilita o acesso rápido às pastas específicas do Google Drive para upload de documentos importantes como comprovantes de pagamentos e notas fiscais.
 
-There are several ways of editing your application.
+## Funcionalidades
 
-**Use Lovable**
+- **Interface Minimalista**: Design elegante com as cores da marca da Clínica Salvus
+- **Acesso Direto**: Dois botões principais para acessar pastas específicas do Google Drive
+- **Responsivo**: Otimizado para dispositivos móveis, especialmente iOS
+- **Logo Personalizada**: Utiliza a identidade visual oficial da Clínica Salvus
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/669d95b1-f133-4b81-a93a-624dcfd190e5) and start prompting.
+## Pastas de Acesso
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Comprovantes Pagamentos Vendas**: Para upload de comprovantes de pagamentos e vendas
+2. **Notas Fiscais**: Para organização e upload de notas fiscais
 
-**Use your preferred IDE**
+## Tecnologias Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React** + **TypeScript**: Framework principal
+- **Tailwind CSS**: Estilização com cores personalizadas da marca
+- **Capacitor**: Para conversão em aplicativo móvel iOS
+- **Lucide React**: Ícones
+- **Vite**: Build tool
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Como Executar Localmente
 
-Follow these steps:
+```bash
+# Instalar dependências
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Executar em modo desenvolvimento
 npm run dev
+
+# Build para produção
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## Deploy Mobile (iOS)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Para criar a versão iOS do aplicativo:
 
-**Use GitHub Codespaces**
+1. **Exportar para GitHub**: Use o botão "Export to Github" no Lovable
+2. **Clonar o repositório**: `git pull` do seu repositório GitHub
+3. **Instalar dependências**: `npm install`
+4. **Adicionar plataforma iOS**: `npx cap add ios`
+5. **Atualizar plataforma**: `npx cap update ios`
+6. **Build do projeto**: `npm run build`
+7. **Sincronizar**: `npx cap sync`
+8. **Executar no iOS**: `npx cap run ios`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Requisitos para iOS:**
+- macOS com Xcode instalado
+- Conta de desenvolvedor Apple (para distribuição)
 
-## What technologies are used for this project?
+## Configuração do Capacitor
 
-This project is built with:
+O aplicativo está configurado com:
+- **App ID**: `app.lovable.669d95b1f1334b81a93a624dcfd190e5`
+- **Nome**: `Clínica Salvus`
+- **Cor do tema**: `#172643` (azul da marca)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Links das Pastas Google Drive
 
-## How can I deploy this project?
+- **Comprovantes Pagamentos Vendas**: https://drive.google.com/drive/folders/1r0aN825OYzkk14hjlhs9vXzi_aKq7tbK?usp=sharing
+- **Notas Fiscais**: https://drive.google.com/drive/folders/179JTvFAL8BNTYRi-ZEQUfyPLYaSqyDkO?usp=drive_link
 
-Simply open [Lovable](https://lovable.dev/projects/669d95b1-f133-4b81-a93a-624dcfd190e5) and click on Share -> Publish.
+## Design
 
-## Can I connect a custom domain to my Lovable project?
+- **Cor Principal**: `#172643` (Azul Salvus)
+- **Cor Secundária**: `#B8860B` (Dourado)
+- **Logo**: Clínica Salvus oficial
+- **Fonte**: Sistema padrão (clean e legível)
 
-Yes, you can!
+## Limitações Técnicas
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Devido às restrições de segurança do iOS (sandboxing), o aplicativo não pode automatizar ações dentro do Google Drive. Após abrir uma pasta, o usuário precisará:
+1. Tocar no botão "+" dentro do Google Drive
+2. Selecionar "Tirar Foto" ou "Fazer upload de arquivo"
+3. Adicionar o documento desejado
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Suporte
+
+Para suporte técnico ou modificações, entre em contato com a equipe de desenvolvimento.
+
+---
+
+**Clínica Salvus - Medicina e Estética Afetiva**
