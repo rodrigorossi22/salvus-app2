@@ -1,15 +1,16 @@
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+// import { useEffect } from "react"; // Pode remover se não usar mais useEffect
 
 const NotFound = () => {
   const location = useLocation();
 
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
+  // Removido o console.error para não poluir o console com 404 esperados
+  // useEffect(() => {
+  //   console.error(
+  //     "404 Error: User attempted to access non-existent route:",
+  //     location.pathname
+  //   );
+  // }, [location.pathname]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
